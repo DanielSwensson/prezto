@@ -10,8 +10,3 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-POWERLEVEL9K_MODE='awesome-patched'
-DEFAULT_USER=$USER
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
-POWERLEVEL9K_VCS_HIDE_TAGS=true

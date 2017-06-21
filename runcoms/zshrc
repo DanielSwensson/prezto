@@ -14,3 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 eval "$(/Users/danielswensson/Developer/hemnet/bin/hemnet init - zsh)"
+
+export PATH=$PATH:~/Documents/WebDriver
+chruby ruby-2.4.1
+
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
